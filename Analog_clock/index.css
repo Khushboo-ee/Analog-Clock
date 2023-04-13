@@ -1,0 +1,45 @@
+#clockContainer{
+    /* background-color: lightsalmon; */
+    margin: auto;
+    border: 1px solid whitesmoke;
+    height: 40vw; /*Making it responsive*/
+    width: 40vw;
+    position: relative;
+    background: url(clock2.png) no-repeat;
+    background-size: 100%; /*To put clock at centre of this container*/
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+}
+
+#hour{
+    width: 1.3%;
+    height: 21%;
+    top: 30%;
+    left: 49.9%;
+   transform-origin: bottom;
+   
+}
+
+#minute{
+    width: 1%;
+    height: 24%;
+    top: 26%;
+    left: 49.9%;
+    opacity: 0.8;
+    transform-origin: bottom;
+}
+
+#second{
+    width: 0.5%;
+    height: 30%;
+    top: 20%;
+    left: 49.9%;
+    opacity: 0.6;
+    transform-origin: bottom;
+}
+
+/*by default all the hands will rotate about its centre but to rotate it by its end we will use a property transform-origin*/
